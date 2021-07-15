@@ -36,7 +36,9 @@ a:hover {
   height: 100px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+}
+.favs {
+  background-color: tomato;
 }
 #fav-places {
   height: 100px;
