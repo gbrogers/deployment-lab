@@ -6,6 +6,9 @@ header {
   background-color: #eee;
   display: flex;
 }
+h1 {
+  font-size: 70px;
+}
 
 #profile-pic {
   width: 200px;
