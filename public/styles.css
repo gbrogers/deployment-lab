@@ -1,30 +1,68 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: content-box;
 }
 header {
-  background-color: #eee;
-  display: flex;
+  background-image: linear-gradient(to left, pink, rgb(130, 130, 240));
+  background-size: 100% 400px;
 }
+
 h1 {
-  font-size: 70px;
+  font-size: 90px;
+  display: inline-block;
+  position: absolute;
+  top: 300px;
+  left: 325px;
+  padding: 10px 20px;
+  border-radius: 20px;
 }
 
 #profile-pic {
-  width: 200px;
-  padding: 30px;
+  width: 250px;
+  padding: 40px;
+  border-radius: 70px;
 }
 nav {
-  background-color: #326273;
+  background-color: #29a2c7;
 }
 
-ul {
+.fav-section {
+  margin: 2em;
+}
+
+.flex-list {
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+  padding: 15px;
+}
+
+.flex-list li {
+  margin: 1em;
+  height: 100px;
+  flex-grow: 1;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: pink;
+}
+
+.flex-list li:hover {
+  transform: scale(1.05);
+  box-shadow: yellow 1px 0 10px;
+  font-weight: bold;
+}
+
+.nav-list {
   height: 100px;
   display: flex;
   justify-content: space-around;
   align-items: center;
   list-style: none;
 }
+
 a {
   text-decoration: none;
   color: white;
@@ -33,25 +71,31 @@ a {
 
 a:hover {
   font-weight: 900;
+  text-shadow: yellow 1px 0 10px;
+  color: black;
+}
+#mottos .flex-list li {
+  background-color: powderblue;
+}
+#mottos .flex-list li:hover {
+  background-color: hotpink;
+}
+#fav-places .flex-list li:hover {
+  background-color: hotpink;
+}
+#fav-foods .flex-list li:hover {
+  background-color: hotpink;
+}
+#music .flex-list li:hover {
+  background-color: hotpink;
 }
 
-#fav-foods {
-  height: 100px;
-  display: flex;
-  flex-direction: column;
+#fav-foods .flex-list li {
+  background-color: lightgreen;
 }
-.favs {
-  background-color: tomato;
+#fav-places .flex-list li {
+  background-color: rgb(255, 206, 116);
 }
-#fav-places {
-  height: 100px;
-  display: flex;
-}
-#music {
-  height: 100px;
-  display: flex;
-}
-#mottos {
-  height: 100px;
-  display: flex;
+.flex-list p {
+  font-size: 25px;
 }
