@@ -1,0 +1,52 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+header {
+  background-color: #eee;
+  display: flex;
+}
+
+#profile-pic {
+  width: 200px;
+  padding: 30px;
+}
+nav {
+  background-color: #326273;
+}
+
+ul {
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+}
+
+a:hover {
+  font-weight: 900;
+}
+
+#fav-foods {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#fav-places {
+  height: 100px;
+  display: flex;
+}
+#music {
+  height: 100px;
+  display: flex;
+}
+#mottos {
+  height: 100px;
+  display: flex;
+}
